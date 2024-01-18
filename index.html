@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Oswald:wght@200&family=Roboto+Mono:wght@100&family=Shantell+Sans:wght@300&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+</head>
+<body>
+  <!-- star quiz btn -->
+  <div class="start-btn"><button>Start Quiz</button></div> 
+  <!-- info box -->
+  <div class="info-box">
+      <div class="info-title">
+          <span>Some Rules of this Quiz!</span>
+      </div>
+      <div class="info-list">
+          <div class="info">1. You will have only <span>30 Seconds</span> per each Question.</div>
+          <div class="info">2. You can't select Option while time  goes off.</div>
+          <div class="info">3. You'll get points on the basis your correct Answers.</div>
+      </div>
+      <div class="buttons">
+          <button class="quit">Exit Quiz</button>
+          <button class="restart">Continue</button>
+      </div>
+  </div>
+  
+  <!-- quiz box -->
+  <div class="quiz-box">
+      <header>
+          <div class="title">Awsome Quiz Application</div>
+          <div class="timer">
+              <div class="time-text">Time Left</div>
+              <div class="timer-sec">15</div>
+          </div>
+          <div class="time_line"></div>
+      </header>
+      <section>
+          <div class="que_text">
+              <!-- <span>What does HTML stands for?</span> -->
+          </div>
+          <div class="option_list">
+              <div class="option">
+                  <span>Hyper text preprocessor</span>
+                  <div class="icon tick"><i class="fa-solid fa-check"></i></div>
+              </div>
+  
+              <div class="option">
+                  <span>Hyper Text Markup Language</span>
+                  <div class="icon cross"><i class="fa-solid fa-xmark"></i></div>
+              </div>
+  
+              <div class="option">
+                  <span>Hyper Text Multiple Language</span>
+              </div>
+  
+              <div class="option">
+                  <span>Hyper Tool Multi Language</span>
+              </div> 
+          </div>
+      </section>
+  
+      <!-- quiz app footer -->
+      <footer>
+          <div class="total-quiz">
+              <!-- <span> <p>2</p> of <p>5</p> Questions!</span> -->
+          </div>
+          <button class="next-btn">Next Question</button>
+      </footer>
+  
+      
+  </div>
+  
+      <!-- Result box -->
+  <div class="result-box">
+      <div class="icon">
+          <i class="fa-solid fa-crown"></i>
+      </div>
+      <div class="complete-text">You have Completed the Quiz!</div>
+      <div class="score-text">
+          <!-- <span>and sorry, you got only <p>2</p> out of <p>5</p> </span> -->
+      </div>
+      <div class="buttons">
+          <button class="restart">Replay Quiz</button>
+          <button class="quit">Quit Quiz</button>
+      </div>
+  </div>
+  
+  <script src="index.js"></script>
+  <script src="quiz.js"></script>
+        
+</body>
+</html>
